@@ -1,0 +1,54 @@
+<html>
+<meta charset = "utf-8">
+<head>
+<script type="text/javascript">
+function login(jsben)
+{
+	document.anm.ben.value = jsben;
+	document.anm.submit();
+}
+
+function gast()
+{
+	document.anm.ben.value = "";
+	document.anm.submit();
+}
+</script>
+</head>
+<body>
+<h1>Anmeldung</h1>
+<form name="anm" action="button.php" method="post" onSubmit="gast();">
+	<p><input type="hidden" name="ben"/></p>
+	
+	<table border="1">
+	
+	<tr>
+		<td><b>Name</b></td>
+		<td><b>Passwort</b></td>
+		<td><b>Reg. Benutzer</b></td>
+	</tr>
+	
+	<tr>
+		<td>Peter</td>
+		<td><input name="pw1" type="password" size="12"/></td>
+		<td><input type="button" value="Login" onClick="login('Peter');"/></td>
+	</tr>
+	
+	<tr>
+		<td>Julia</td>
+		<td><input name="pw2" type="password" size="12"/></td>
+		<td><input type="button" value="Login" onClick="login('Julia');"/></td>
+	</tr>
+	
+	<tr>
+		<td>Dirk</td>
+		<td><input name="pw3" type="password" size="12"/></td>
+		<td><input type="button" value="Login" onClick="login('Dirk');"/></td>
+	</tr>
+	
+	</table>
+	<p><input type="submit" value="Login als Gast"/>
+	<input type="reset"/></p>
+</form>
+</body>
+</html>

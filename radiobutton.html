@@ -1,0 +1,23 @@
+<html>
+<meta charset = "utf-8">
+<head>
+</head>
+<body>
+	<h1>Reisen</h1>
+	<p>Bitte treffen Sie jeweils eine Auswahl<br/>
+	und senden Sie das Formular ab:</p>
+	<form action="radiobutton.php" method="post">
+		<h2>Reiseziel</h2>
+		<p><input type="radio" name="rziel" value="Gomera" checked="checked" /> Wandern auf Gomera<br/>						<!-- Auswahl von EINEM Objekt "Text sthet neben dem Auswahlknopf -->
+		<input type="radio" name="rziel" value="Lanzerote" /> Sonnen auf Lanzerote<br/>
+		<input type="radio" name="rziel" value="Fuerteventura" />Surfen auf Fuerteventura</p>
+		
+		<h2>Hoteltyp</h2>
+		<p><input type="radio" name="htyp" value="Drei" checked="checked" />Drei-Sterne-Hotel<br/>
+		<input type="radio" name="htyp" value="Vier" />Vier-Sterne-Hotel</p>
+		
+		<p><input type="submit" />
+		<input type="reset" /></p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<meta charset = "utf-8">
+<head>
+<script type="text/javascript">
+function fcheck()
+{
+	if (document.anm.ben.value.length < 4)
+	{
+		alert("Der Benutzerneame muss 4-10 Zeichen haben!");
+		return(false);
+	}
+	else if (document.anm.pw.value.length < 4)
+	{
+		alert("Das Passwort muss 4-6 Zeichen haben!");
+		return(false);
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+	<h1>Anmeldung</h1>
+	<form name="anm" action="submit_reset_javascript.php" method="post" onSubmit="return fcheck();">
+		<p><input name="ben" maxlength="10"/>Benutzername (4-10 Zeichen)</p>
+		<p><input type="password" name="pw" maxlength="6"/>Passwort (4-6 Zeichen)</p>
+		<p><input type="submit" value="Login"/>
+		<input type="reset"/></p>
+	</form>
+</body>
+</html>

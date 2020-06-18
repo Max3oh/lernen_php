@@ -1,0 +1,28 @@
+<html>
+<meta charset = "utf-8">
+<head>
+</head>
+<body>
+	<p>Bitte treffen Sie jeweils eine Auswahl<br/>
+	und senden Sie das Formular ab:
+	<form action="radiobutton.php" method="post">												<!-- Einen Auswahl von mehreren Optionen in EINEM Feld --> 
+	<p><select name="rziel">
+		<option value="Gomera">
+			Wandern auf Gomera</option>
+		<option value="Lanzerote" selected="selected">
+			Sonnen auf Lanzerote</option>
+		<option value="Fuerteventura">
+			Surfen auf Fuerteventura</option>
+	</select>Reiseziel</p>
+	
+	<p><select name="htyp">
+		<option value="Drei" selected="selected">
+			Drei-Sterne-Hotel</option>
+		<option value="Vier">
+			Vier-Sterne-Hotel</option>
+	</select>Hotel-Typ</p>
+	
+	<p><input type="submit" value="Suchen"/>
+	<input type="reset"/></p>
+</body>
+</html>
