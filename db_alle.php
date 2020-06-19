@@ -6,7 +6,7 @@
 <?php
 	$con = mysqli_connect("", "root");
 	mysqli_select_db($con, "firma");
-	$sql = "update personen set gehalt = gehalt * 0.95";
+	$sql = "update personen set gehalt = gehalt * 1.0003";
 	mysqli_query($con, $sql);
 	
 	$num = mysqli_affected_rows($con);
