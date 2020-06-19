@@ -8,7 +8,7 @@
 	mysqli_select_db($con, "firma");
 	
 	$sql = "select name, vorname from personen";
-	$sql .= " where name like 'M%' order by name";
+	$sql .= " where name like 'M_____' order by name";
 	
 	$res = mysqli_query($con, $sql);
 	$num = mysqli_num_rows($res);
