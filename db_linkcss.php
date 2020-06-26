@@ -1,7 +1,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="db_linkcss.css">
-	<script typew="text/javascript">
+	<script type="text/javascript">
 	function send(ak,id)
 	{
 		if(ak==0)
