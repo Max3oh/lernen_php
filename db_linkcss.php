@@ -107,8 +107,9 @@
 		
 		$sqli = "select * from personen order by " . $order;
 	}
-		/* echo "<p><input type='submit' value='Sortieren'/></p>"; */
-		echo "</form>";
+	
+	/* echo "<p><input type='submit' value='Sortieren'/></p>"; */
+	echo "</form>";
 	
 	$res = mysqli_query($con, $sqli);
 	
